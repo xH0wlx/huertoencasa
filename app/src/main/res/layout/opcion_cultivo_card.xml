@@ -1,0 +1,36 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    android:background="@mipmap/huertos"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/imagen_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10sp"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:id="@+id/opcion_cultivo_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opcion"
+            style="@style/CardCultivoText"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/opcion_cultivo_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalles Seccion"
+            style="@style/CardDetallesCultivoText"
+            android:layout_marginTop="50sp"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

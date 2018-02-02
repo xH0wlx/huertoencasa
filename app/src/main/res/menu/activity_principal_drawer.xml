@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_account"
+            android:title="Conectarse/Registrarse" />
+        <item
+            android:id="@+id/nav_basico"
+            android:icon="@drawable/ic_learn"
+            android:title="Aprender lo básico" />
+        <item
+            android:id="@+id/nav_lista"
+            android:icon="@drawable/ic_list"
+            android:title="Lista de plantas" />
+        <item
+            android:id="@+id/nav_crear"
+            android:icon="@drawable/ic_add"
+            android:title="Crear cultivo" />
+
+        <item
+            android:id="@+id/nav_tareas"
+            android:icon="@drawable/ic_schedule"
+            android:title="Lista de tareas" />
+    </group>
+
+    <item android:title="Datos">
+        <menu>
+            <item
+                android:id="@+id/nav_respaldar"
+                android:icon="@drawable/ic_cloud_upload"
+                android:title="Respaldar datos" />
+            <item
+                android:id="@+id/nav_restaurar"
+                android:icon="@drawable/ic_cloud_download"
+                android:title="Restaurar datos" />
+        </menu>
+    </item>
+
+</menu>

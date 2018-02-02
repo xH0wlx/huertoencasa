@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alink.huerto.AgregarACultivoActivity">
+
+
+    <Spinner
+        android:id="@+id/cultivo_tipo_suelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/tAgregarCultivo"
+        android:layout_toEndOf="@+id/tAgregarCultivo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asignar"
+        android:id="@+id/botonAsignacion"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tNombrePlanta"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/tAgregarCultivo"
+        android:layout_toStartOf="@+id/tAgregarCultivo"
+        android:layout_marginTop="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="=>"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/tNombrePlanta"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Planta:"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/tAgregarCultivo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cultivo:"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/tNombrePlanta"
+        android:layout_alignLeft="@+id/cultivo_tipo_suelo"
+        android:layout_alignStart="@+id/cultivo_tipo_suelo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tAgregarCultivo"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/botonAsignacion"
+        android:layout_alignEnd="@+id/botonAsignacion"
+        android:layout_alignLeft="@+id/botonAsignacion"
+        android:layout_alignStart="@+id/botonAsignacion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cantidad:"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/cultivo_tipo_suelo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/inputCantidad"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/cultivo_tipo_suelo"
+        android:layout_alignEnd="@+id/cultivo_tipo_suelo" />
+
+</RelativeLayout>
